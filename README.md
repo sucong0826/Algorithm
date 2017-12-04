@@ -1,0 +1,2 @@
+All algorithms for learing.
+^.^
