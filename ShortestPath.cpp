@@ -29,7 +29,7 @@ void shortest_path(int s, int t, int path[]) {
 	{
 	    if (dist[k][i] != 0 && state[i].label == tentative) 
 	    {
-	    	if (state[i].length + dist[k][i] < state[i].length)
+	    	if (state[k].length + dist[k][i] < state[i].length)
 		{
 		    state[i].predecessor = k;
 		    state[i].length = state[k].length + dist[k][i];
