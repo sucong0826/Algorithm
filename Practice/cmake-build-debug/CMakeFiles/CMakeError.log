@@ -1,0 +1,60 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c++: error: spawn: Permission denied
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+c++: error: spawn: Permission denied
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c++: error: spawn: Permission denied
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make.exe" "cmTC_d94a9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d94a9.dir/build.make CMakeFiles/cmTC_d94a9.dir/build
+make[1]: Entering directory '/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d94a9.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_d94a9.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/sucon/.CLion2017.3/system/cygwin_cmake/share/cmake-3.9.6/Modules/CMakeCXXCompilerABI.cpp
+c++: error: spawn: Permission denied
+make[1]: *** [CMakeFiles/cmTC_d94a9.dir/build.make:66: CMakeFiles/cmTC_d94a9.dir/CMakeCXXCompilerABI.cpp.o] Error 1
+make[1]: Leaving directory '/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_d94a9/fast] Error 2
+
+
+
+Detecting CXX [-std=c++1z] compiler features failed to compile with the following output:
+Change Dir: /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make.exe" "cmTC_7be79/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7be79.dir/build.make CMakeFiles/cmTC_7be79.dir/build
+make[1]: Entering directory '/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7be79.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++1z -o CMakeFiles/cmTC_7be79.dir/feature_tests.cxx.o -c /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/feature_tests.cxx
+c++: error: spawn: Permission denied
+make[1]: *** [CMakeFiles/cmTC_7be79.dir/build.make:66: CMakeFiles/cmTC_7be79.dir/feature_tests.cxx.o] Error 1
+make[1]: Leaving directory '/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_7be79/fast] Error 2
+
+
+
