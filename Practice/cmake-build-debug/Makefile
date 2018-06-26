@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/sucon/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/f/03_workspace/Practice
+CMAKE_SOURCE_DIR = /cygdrive/f/03_workspace/04_git/Algorithm/Practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/f/03_workspace/Practice/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ Practice: cmake_check_build_system
 Practice/fast:
 	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/build
 .PHONY : Practice/fast
+
+list/list_algo.o: list/list_algo.cpp.o
+
+.PHONY : list/list_algo.o
+
+# target to build an object file
+list/list_algo.cpp.o:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/list/list_algo.cpp.o
+.PHONY : list/list_algo.cpp.o
+
+list/list_algo.i: list/list_algo.cpp.i
+
+.PHONY : list/list_algo.i
+
+# target to preprocess a source file
+list/list_algo.cpp.i:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/list/list_algo.cpp.i
+.PHONY : list/list_algo.cpp.i
+
+list/list_algo.s: list/list_algo.cpp.s
+
+.PHONY : list/list_algo.s
+
+# target to generate assembly for a file
+list/list_algo.cpp.s:
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/list/list_algo.cpp.s
+.PHONY : list/list_algo.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Practice"
+	@echo "... list/list_algo.o"
+	@echo "... list/list_algo.i"
+	@echo "... list/list_algo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

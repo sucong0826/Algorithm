@@ -1,4 +1,4 @@
-C:\Users\sucon\.CLion2017.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/f/03_workspace/Practice
+C:\Users\sucon\.CLion2017.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/f/03_workspace/04_git/Algorithm/Practice
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/f/03_workspace/Practice/cmake-build-debug
+-- Build files have been written to: /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug

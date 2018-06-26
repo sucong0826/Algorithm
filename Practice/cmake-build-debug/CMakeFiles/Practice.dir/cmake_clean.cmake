@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Practice.dir/main.cpp.o"
   "CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
+  "CMakeFiles/Practice.dir/list/list_algo.cpp.o"
   "Practice.pdb"
   "Practice.exe"
   "libPractice.dll.a"

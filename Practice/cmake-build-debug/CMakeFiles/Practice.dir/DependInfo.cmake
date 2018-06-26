@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/f/03_workspace/Practice/main.cpp" "/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/Practice.dir/main.cpp.o"
-  "/cygdrive/f/03_workspace/Practice/strings/strings_algo.cpp" "/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
+  "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/list/list_algo.cpp" "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles/Practice.dir/list/list_algo.cpp.o"
+  "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/main.cpp" "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles/Practice.dir/main.cpp.o"
+  "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/strings/strings_algo.cpp" "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

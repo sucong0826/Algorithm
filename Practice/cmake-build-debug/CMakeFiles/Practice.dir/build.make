@@ -43,10 +43,10 @@ RM = /cygdrive/c/Users/sucon/.CLion2017.3/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/f/03_workspace/Practice
+CMAKE_SOURCE_DIR = /cygdrive/f/03_workspace/04_git/Algorithm/Practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/f/03_workspace/Practice/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Practice.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Practice.dir/flags.make
 
 CMakeFiles/Practice.dir/main.cpp.o: CMakeFiles/Practice.dir/flags.make
 CMakeFiles/Practice.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Practice.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Practice.dir/main.cpp.o -c /cygdrive/f/03_workspace/Practice/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Practice.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Practice.dir/main.cpp.o -c /cygdrive/f/03_workspace/04_git/Algorithm/Practice/main.cpp
 
 CMakeFiles/Practice.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practice.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/f/03_workspace/Practice/main.cpp > CMakeFiles/Practice.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/f/03_workspace/04_git/Algorithm/Practice/main.cpp > CMakeFiles/Practice.dir/main.cpp.i
 
 CMakeFiles/Practice.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practice.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/f/03_workspace/Practice/main.cpp -o CMakeFiles/Practice.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/f/03_workspace/04_git/Algorithm/Practice/main.cpp -o CMakeFiles/Practice.dir/main.cpp.s
 
 CMakeFiles/Practice.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Practice.dir/main.cpp.o.provides.build: CMakeFiles/Practice.dir/main.
 
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.o: CMakeFiles/Practice.dir/flags.make
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.o: ../strings/strings_algo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Practice.dir/strings/strings_algo.cpp.o -c /cygdrive/f/03_workspace/Practice/strings/strings_algo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Practice.dir/strings/strings_algo.cpp.o -c /cygdrive/f/03_workspace/04_git/Algorithm/Practice/strings/strings_algo.cpp
 
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practice.dir/strings/strings_algo.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/f/03_workspace/Practice/strings/strings_algo.cpp > CMakeFiles/Practice.dir/strings/strings_algo.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/f/03_workspace/04_git/Algorithm/Practice/strings/strings_algo.cpp > CMakeFiles/Practice.dir/strings/strings_algo.cpp.i
 
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practice.dir/strings/strings_algo.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/f/03_workspace/Practice/strings/strings_algo.cpp -o CMakeFiles/Practice.dir/strings/strings_algo.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/f/03_workspace/04_git/Algorithm/Practice/strings/strings_algo.cpp -o CMakeFiles/Practice.dir/strings/strings_algo.cpp.s
 
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.o.requires:
 
@@ -105,19 +105,45 @@ CMakeFiles/Practice.dir/strings/strings_algo.cpp.o.provides: CMakeFiles/Practice
 CMakeFiles/Practice.dir/strings/strings_algo.cpp.o.provides.build: CMakeFiles/Practice.dir/strings/strings_algo.cpp.o
 
 
+CMakeFiles/Practice.dir/list/list_algo.cpp.o: CMakeFiles/Practice.dir/flags.make
+CMakeFiles/Practice.dir/list/list_algo.cpp.o: ../list/list_algo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Practice.dir/list/list_algo.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Practice.dir/list/list_algo.cpp.o -c /cygdrive/f/03_workspace/04_git/Algorithm/Practice/list/list_algo.cpp
+
+CMakeFiles/Practice.dir/list/list_algo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practice.dir/list/list_algo.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/f/03_workspace/04_git/Algorithm/Practice/list/list_algo.cpp > CMakeFiles/Practice.dir/list/list_algo.cpp.i
+
+CMakeFiles/Practice.dir/list/list_algo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practice.dir/list/list_algo.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/f/03_workspace/04_git/Algorithm/Practice/list/list_algo.cpp -o CMakeFiles/Practice.dir/list/list_algo.cpp.s
+
+CMakeFiles/Practice.dir/list/list_algo.cpp.o.requires:
+
+.PHONY : CMakeFiles/Practice.dir/list/list_algo.cpp.o.requires
+
+CMakeFiles/Practice.dir/list/list_algo.cpp.o.provides: CMakeFiles/Practice.dir/list/list_algo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Practice.dir/build.make CMakeFiles/Practice.dir/list/list_algo.cpp.o.provides.build
+.PHONY : CMakeFiles/Practice.dir/list/list_algo.cpp.o.provides
+
+CMakeFiles/Practice.dir/list/list_algo.cpp.o.provides.build: CMakeFiles/Practice.dir/list/list_algo.cpp.o
+
+
 # Object files for target Practice
 Practice_OBJECTS = \
 "CMakeFiles/Practice.dir/main.cpp.o" \
-"CMakeFiles/Practice.dir/strings/strings_algo.cpp.o"
+"CMakeFiles/Practice.dir/strings/strings_algo.cpp.o" \
+"CMakeFiles/Practice.dir/list/list_algo.cpp.o"
 
 # External object files for target Practice
 Practice_EXTERNAL_OBJECTS =
 
 Practice.exe: CMakeFiles/Practice.dir/main.cpp.o
 Practice.exe: CMakeFiles/Practice.dir/strings/strings_algo.cpp.o
+Practice.exe: CMakeFiles/Practice.dir/list/list_algo.cpp.o
 Practice.exe: CMakeFiles/Practice.dir/build.make
 Practice.exe: CMakeFiles/Practice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Practice.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Practice.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Practice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +153,7 @@ CMakeFiles/Practice.dir/build: Practice.exe
 
 CMakeFiles/Practice.dir/requires: CMakeFiles/Practice.dir/main.cpp.o.requires
 CMakeFiles/Practice.dir/requires: CMakeFiles/Practice.dir/strings/strings_algo.cpp.o.requires
+CMakeFiles/Practice.dir/requires: CMakeFiles/Practice.dir/list/list_algo.cpp.o.requires
 
 .PHONY : CMakeFiles/Practice.dir/requires
 
@@ -135,6 +162,6 @@ CMakeFiles/Practice.dir/clean:
 .PHONY : CMakeFiles/Practice.dir/clean
 
 CMakeFiles/Practice.dir/depend:
-	cd /cygdrive/f/03_workspace/Practice/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/f/03_workspace/Practice /cygdrive/f/03_workspace/Practice /cygdrive/f/03_workspace/Practice/cmake-build-debug /cygdrive/f/03_workspace/Practice/cmake-build-debug /cygdrive/f/03_workspace/Practice/cmake-build-debug/CMakeFiles/Practice.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/f/03_workspace/04_git/Algorithm/Practice /cygdrive/f/03_workspace/04_git/Algorithm/Practice /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug /cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/CMakeFiles/Practice.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Practice.dir/depend
 

@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Practice.dir/main.cpp.o CMakeFiles/Practice.dir/strings/strings_algo.cpp.o  -o Practice.exe -Wl,--out-implib,libPractice.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Practice.dir/main.cpp.o CMakeFiles/Practice.dir/strings/strings_algo.cpp.o CMakeFiles/Practice.dir/list/list_algo.cpp.o  -o Practice.exe -Wl,--out-implib,libPractice.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
