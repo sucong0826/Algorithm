@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include "strings/strings_algo.h"
+#include "list/ListNode.h"
+#include "list/list_algo.h"
 #include <array>
 
 
@@ -25,6 +27,13 @@ int main() {
 
     std::array<int, 5> int_arr = {1, 2, 3};
     std::cout << "size is " << int_arr.size() << std::endl;
+
+    ListNode n3(9), n2(1), n1(5), n0(4);
+    n0.next = &n1;
+    n1.next = &n2;
+    n2.next = &n3;
+    list_algo la;
+    la.delete_node(&n0, &n1);
 
     return 0;
 }

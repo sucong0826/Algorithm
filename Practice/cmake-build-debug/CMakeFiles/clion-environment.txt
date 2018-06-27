@@ -1,4 +1,3 @@
-ToolSet: 2.10.0@D:\01_software\cygwin
+ToolSet: 2.10.0@E:\01_softwares\cygwin
 Options: 
-
-Options:
+CMake: 3.7.2@D:\softwares\CLion 2017.1.3\bin\cmake_cygwin\bin\cmake.exe

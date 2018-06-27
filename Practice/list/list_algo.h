@@ -6,8 +6,11 @@
 #define PRACTICE_LIST_ALGO_H
 
 
-class list_algo {
+#include "ListNode.h"
 
+class list_algo {
+public:
+    void delete_node(ListNode *head, ListNode *node);
 };
 
 

@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/f/03_workspace/04_git/Algorithm/Practice
+# Install script for directory: /cygdrive/e/04_files/01_workspace/03_Cpp/Algorithm/Practice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/f/03_workspace/04_git/Algorithm/Practice/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/e/04_files/01_workspace/03_Cpp/Algorithm/Practice/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
