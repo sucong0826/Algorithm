@@ -28,12 +28,18 @@ int main() {
     std::array<int, 5> int_arr = {1, 2, 3};
     std::cout << "size is " << int_arr.size() << std::endl;
 
-    ListNode n3(9), n2(1), n1(5), n0(4);
+    ListNode n0(1), n1(2), n2(3), n3(4), n4(5);
     n0.next = &n1;
     n1.next = &n2;
     n2.next = &n3;
-    list_algo la;
-    la.delete_node(&n0, &n1);
+    n3.next = &n4;
 
+    list_algo la;
+    // la.delete_node(&n0, &n1);
+//    ListNode *front = la.remove_node_from_end(&n0, 1);
+//    std::cout << "The front node is " << front -> val << std::endl;
+
+    // la.reverse_node(&n0);
+    la.recursive_reverse(&n0);
     return 0;
 }

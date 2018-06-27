@@ -11,6 +11,12 @@
 class list_algo {
 public:
     void delete_node(ListNode *head, ListNode *node);
+    ListNode* remove_node_from_end(ListNode *node, int n);
+    ListNode* reverse_node(ListNode* nodes);
+    ListNode* recursive_reverse(ListNode* nodes);
+
+private:
+    ListNode* reverse(ListNode *node);
 };
 
 
