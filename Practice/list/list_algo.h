@@ -14,6 +14,7 @@ public:
     ListNode* remove_node_from_end(ListNode *node, int n);
     ListNode* reverse_node(ListNode* nodes);
     ListNode* recursive_reverse(ListNode* nodes);
+    ListNode* merge_two_lists(ListNode* l1, ListNode* l2);
 
 private:
     ListNode* reverse(ListNode *node);

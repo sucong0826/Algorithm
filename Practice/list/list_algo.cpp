@@ -5,6 +5,7 @@
 #include <list>
 #include <stack>
 #include <vector>
+#include <forward_list>
 #include "list_algo.h"
 
 void list_algo::delete_node(ListNode *head, ListNode *node) {
@@ -122,4 +123,85 @@ ListNode *list_algo::reverse(ListNode *node) {
         node->next->next = node;
         return node->next;
     }
+}
+
+ListNode *list_algo::merge_two_lists(ListNode *l1, ListNode *l2) {
+    if (l1 == nullptr && l2 == nullptr) {
+        return nullptr;
+    } else if (l1 == nullptr) {
+        return l2;
+    } else if (l2 == nullptr) {
+        return l1;
+    }
+
+    int l1_min = l1->val;
+    int l1_size = 1;
+    ListNode *l1_last_nd = l1;
+    while (l1_last_nd->next != nullptr) {
+        l1_last_nd = l1_last_nd->next;
+        ++l1_size;
+    }
+    int l1_max = l1_last_nd->val;
+
+    int l2_min = l2->val;
+    int l2_size = 1;
+    ListNode *l2_last_nd = l2;
+    while (l2_last_nd->next != nullptr) {
+        l2_last_nd = l2_last_nd->next;
+        ++l2_size;
+    }
+    int l2_max = l2_last_nd->val;
+
+    if (l1_min >= l2_max) {
+        l2_last_nd->next = l1;
+        return l2;
+    }
+
+    if (l1_max <= l2_min) {
+        l1_last_nd->next = l2;
+        return l1;
+    }
+
+    if (l1_size < l2_size) {
+        ListNode *tmp = l1;
+        l1 = l2;
+        l2 = tmp;
+    }
+
+    ListNode *cur_l2_nd = l2;
+    while (cur_l2_nd != nullptr) {
+
+        ListNode *cur_l2_next_nd = l2->next;
+        ListNode *cur_l1_nd = l1;
+
+        while (cur_l1_nd != nullptr) {
+            if (cur_l2_nd->val <= cur_l1_nd->val) {
+                cur_l2_nd->next = cur_l1_nd;
+                l1 = cur_l2_nd;
+                break;
+            } else if (cur_l2_nd->val > cur_l1_nd->val) {
+                if (cur_l1_nd->next == nullptr) {
+                    cur_l1_nd->next = cur_l2_nd;
+                    break;
+                } else {
+                    if (cur_l2_nd->val <= cur_l1_nd->next->val) {
+                        ListNode *l1_next = cur_l1_nd->next;
+                        cur_l1_nd->next = cur_l2_nd;
+                        cur_l2_nd->next = l1_next;
+                        break;
+                    } else {
+                        cur_l1_nd = cur_l1_nd->next;
+                        continue;
+                    }
+                }
+            } else {
+                cur_l1_nd = cur_l1_nd->next;
+            }
+        };
+
+        cur_l2_nd = cur_l2_next_nd;
+        l2 = cur_l2_next_nd;
+    }
+
+    return l1;
 }
