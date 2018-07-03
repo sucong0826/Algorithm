@@ -6,6 +6,8 @@
 #include <stack>
 #include <vector>
 #include <forward_list>
+#include <iostream>
+#include <set>
 #include "list_algo.h"
 
 void list_algo::delete_node(ListNode *head, ListNode *node) {
@@ -105,13 +107,25 @@ ListNode *list_algo::reverse_node(ListNode *nodes) {
 }
 
 ListNode *list_algo::recursive_reverse(ListNode *nodes) {
-    if (nodes == nullptr || nodes->next == nullptr) {
-        return nodes;
+//    if (nodes == nullptr || nodes->next == nullptr) {
+//        return nodes;
+//    }
+//
+//    ListNode *h = reverse(nodes);
+//    nodes->next = nullptr;
+//    return h;
+
+    ListNode *first = nodes;
+    ListNode *reverse = nullptr;
+
+    while (first != nullptr) {
+        ListNode *second = first->next;
+        first->next = reverse;
+        reverse = first;
+        first = second;
     }
 
-    ListNode *h = reverse(nodes);
-    nodes->next = nullptr;
-    return h;
+    return reverse;
 }
 
 ListNode *list_algo::reverse(ListNode *node) {
@@ -126,6 +140,8 @@ ListNode *list_algo::reverse(ListNode *node) {
 }
 
 ListNode *list_algo::merge_two_lists(ListNode *l1, ListNode *l2) {
+
+    // l1 && l2 == nullptr, return nullptr;
     if (l1 == nullptr && l2 == nullptr) {
         return nullptr;
     } else if (l1 == nullptr) {
@@ -168,40 +184,132 @@ ListNode *list_algo::merge_two_lists(ListNode *l1, ListNode *l2) {
         l2 = tmp;
     }
 
-    ListNode *cur_l2_nd = l2;
-    while (cur_l2_nd != nullptr) {
+    ListNode *next_l2 = &(*l2->next);
+    ListNode *head = nullptr;
 
-        ListNode *cur_l2_next_nd = l2->next;
-        ListNode *cur_l1_nd = l1;
-
-        while (cur_l1_nd != nullptr) {
-            if (cur_l2_nd->val <= cur_l1_nd->val) {
-                cur_l2_nd->next = cur_l1_nd;
-                l1 = cur_l2_nd;
-                break;
-            } else if (cur_l2_nd->val > cur_l1_nd->val) {
-                if (cur_l1_nd->next == nullptr) {
-                    cur_l1_nd->next = cur_l2_nd;
-                    break;
-                } else {
-                    if (cur_l2_nd->val <= cur_l1_nd->next->val) {
-                        ListNode *l1_next = cur_l1_nd->next;
-                        cur_l1_nd->next = cur_l2_nd;
-                        cur_l2_nd->next = l1_next;
-                        break;
-                    } else {
-                        cur_l1_nd = cur_l1_nd->next;
-                        continue;
-                    }
-                }
+    while (l1->next != nullptr) {
+        if (l2->val <= l1->val) {
+            // insert to the left of node l1.
+            if (head == nullptr) {
+                head = l2;
+                head->next = l1;
             } else {
-                cur_l1_nd = cur_l1_nd->next;
+                ListNode *tmp = head->next;
+                head->next = l2;
+                l2->next = tmp;
+                break;
             }
-        };
+            l1 = head;
+        } else {
+            if (head == nullptr) {
+                head = &(*l1);
+            }
 
-        cur_l2_nd = cur_l2_next_nd;
-        l2 = cur_l2_next_nd;
+            // insert to the right of node l1.
+            if (l1->next == nullptr) {
+                l1->next = l2;
+            } else {
+                if (l1->next->val < l2->val) {
+                    l1 = l1->next;
+                    continue;
+                } else {
+                    ListNode *tmp = l1->next;
+                    l1->next = l2;
+                    l2->next = tmp;
+                    break;
+                }
+            }
+        }
     }
 
-    return l1;
+    if (next_l2 != nullptr) {
+        merge_two_lists(head, next_l2);
+    } else {
+        return head;
+    }
+}
+
+ListNode *list_algo::print_nd_list(ListNode *l) {
+    if (l->next != nullptr) {
+        std::cout << l->val << "->";
+        return print_nd_list(l->next);
+    } else {
+        std::cout << l->val << "->NULL";
+        return l;
+    }
+}
+
+bool list_algo::is_palindrome(ListNode *l) {
+
+    if (l == nullptr || (l != nullptr && l->next == nullptr)) {
+        return true;
+    }
+
+    if (l->next != nullptr) {
+        ListNode *head = &(*l);
+        while (l->next->next != nullptr) {
+            l = l->next;
+        }
+
+        if (head->val == l->next->val) {
+            l->next = nullptr;
+            head = head->next;
+            return is_palindrome(head);
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+
+bool list_algo::has_cycle(ListNode *l) {
+    if (l == nullptr || l->next == nullptr) {
+        return false;
+    }
+
+    if (l->next == l) {
+        return true;
+    }
+
+    std::set<ListNode *> nodes;
+    while (l->next != nullptr) {
+        if (nodes.empty()) {
+            ListNode *root_node = &(*l);
+            l = l->next;
+            nodes.insert(root_node);
+        } else {
+            if (nodes.find(l) == nodes.end()) {
+                ListNode *root_node = &(*l);
+                nodes.insert(root_node);
+                l = l->next;
+            } else {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+ListNode *list_algo::delete_head(ListNode *head) {
+    if (head == nullptr || head->next == nullptr) {
+        return nullptr;
+    }
+
+    head = head->next;
+    return head;
+}
+
+ListNode *list_algo::max(ListNode *head) {
+    ListNode *max_nd = head;
+    if (head->next == nullptr) {
+        max_nd = head;
+    } else {
+        ListNode *new_head = max(head->next);
+        if (new_head->val > max_nd->val) {
+            max_nd = new_head;
+        }
+    }
+
+    return max_nd;
 }
